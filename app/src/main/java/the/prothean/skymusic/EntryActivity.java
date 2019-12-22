@@ -1,6 +1,8 @@
 package the.prothean.skymusic;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -14,7 +16,10 @@ public class EntryActivity extends AppCompatActivity {
         setContentView(R.layout.entry_activity);
     }
 
-    public void onPlayerButton(View view) {}
+    public void onPlayerButton(View view) {
+        Intent intent = new Intent(this, MusicListActivity.class);
+        startActivity(intent);
+    }
 
     public void onShazamButton(View view) {}
 }
