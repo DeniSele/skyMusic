@@ -79,8 +79,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_toRightOf="@+id/pause"
-                android:background="@drawable/ic_skip_next_black_24dp"
-                android:onClick="onClickNext" />
+                android:background="@drawable/ic_skip_next_black_24dp" />
 
             <Button
                 android:id="@+id/previous"
