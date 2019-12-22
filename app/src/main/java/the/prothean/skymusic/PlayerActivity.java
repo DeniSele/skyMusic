@@ -9,6 +9,7 @@ import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -99,16 +100,15 @@ public class PlayerActivity extends AppCompatActivity {
                     getCover(Uri.fromFile(mySongsFiles.get(i)))));
         }
 
-
+        position = b.getInt("pos", 0);
+        Log.d("INFO",""+position);
+        Uri u = Uri.parse(mySongsFiles.get(position).toString());
+        coverIV.setImageBitmap(mySongs.get(position).cover);
+        mp = MediaPlayer.create(getApplicationContext(), u);
         sname = mySongs.get(position).songName;
 
         songNameText.setText(mySongs.get(position).songName);
         songNameText.setSelected(true);
-
-        position = b.getInt("pos", 0);
-        Uri u = Uri.parse(mySongsFiles.get(position).toString());
-        coverIV.setImageBitmap(mySongs.get(position).cover);
-        mp = MediaPlayer.create(getApplicationContext(), u);
         mp.start();
         sb.setMax(mp.getDuration());
         updateSeekBar.start();
