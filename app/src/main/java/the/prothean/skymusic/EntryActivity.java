@@ -21,5 +21,8 @@ public class EntryActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onShazamButton(View view) {}
+    public void onShazamButton(View view) {
+        Intent intent = new Intent(this, RecognizeActivity.class);
+        startActivity(intent);
+    }
 }
