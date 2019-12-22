@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SkyMusic</string>
+    <string name="player_button">Music player</string>
+    <string name="shazam_button">Shazam</string>
+</resources>
