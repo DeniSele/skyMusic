@@ -1,5 +1,6 @@
 [github-rel-badge]: https://img.shields.io/github/tag/amikhailau/skyMusic.svg?style=flat-square&label=release&colorB=007ec6
 [![skYMusic logo](/logo.png)](https://github.com/fpmi-bsu-pvms-2019/2019-labrabota-11-gr12-cold-may)
+
 Android: [![Android Build Status](https://travis-ci.org/amikhailau/skyMusic.svg?branch=master)](https://travis-ci.com/amikhailau/skyMusic/)
 GitHub Release: [![Github Release][github-rel-badge]]
  
